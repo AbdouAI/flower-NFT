@@ -1,0 +1,198 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background: linear-gradient(purple,red,orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+    -webkit-tap-highlight-color: transparent;
+}
+
+main{
+    max-width: 17rem;
+    min-width: 17rem;
+    height: fit-content;
+    border: rgba(22, 22, 22,.7) 2px solid;
+    background-color: rgba(70, 69, 69, 0.5);
+    border-radius: 1rem;
+}
+
+.content{
+    margin: 0 1rem;
+    margin-top: 1rem;
+    height: fit-content;
+    
+    border-radius: 1rem;
+}
+
+.nft-img{
+    background-image: url(../images/pexels-esther-höfling-12656475.jpg);
+    height: 12rem;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.nft-img:active{
+}
+
+.title:link,.time:visited{
+    font-family: 'Satisfy',cursive;
+    font-size: 2.5rem;
+    margin-bottom: .4rem;
+    width: 4.7rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.title:active{
+    background-color: white ;
+    color: black;
+    mix-blend-mode: screen;
+
+}
+
+.description{
+    font-family: cursive;
+    font-size: .9rem;
+    margin-bottom: .3rem;
+    width: 80%;
+    color: rgb(236, 230, 230);
+    font-weight: 100;
+}
+
+.price-time{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price,.time{
+    display: flex;
+    align-items: center;
+
+}
+
+.price h2{
+    font-size: 1rem;
+    margin-left: .5rem;
+    color: #00FFF8;
+}
+
+.time p{
+    margin-left: .3rem;
+}
+
+
+.maker-credits{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    border-top: rgba(185, 185, 185,.5) 1px solid;
+}
+
+.maker-credits img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid rgba(235, 14, 14,.5);
+    border-radius: 50%;
+}   
+
+.maker-credits p{
+    font-size: .8rem;
+    margin-left: .8rem;
+    color: rgb(196, 194, 194);
+}
+
+.maker-credits a:link ,a:visited{
+    color: white;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.maker-credits a:active{
+    color: orange;
+}
